@@ -1,7 +1,9 @@
 "use client"
 import { signIn } from "next-auth/react"
+import { useRouter } from "next/navigation"
 
 export default function Signin() {
+  const router = useRouter()
   const handleSubmit = async (e: any) => {
     e.preventDefault()
     const data = new FormData(e.currentTarget)
@@ -14,6 +16,7 @@ export default function Signin() {
       alert("username & password salah")
     } else {
       alert("login sukses")
+      router.push("/class")
     }
   }
 
