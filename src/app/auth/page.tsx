@@ -22,8 +22,11 @@ export default function Signin() {
 
   return (
     <main>
-      <section className="flex items-center justify-center">
-        <div className="w-1/3 px-16 py-20 mt-16 border rounded">
+      <section className="flex items-center justify-center px-5">
+        <div className="w-full px-8 py-16 mt-32 border rounded-xl lg:w-1/3">
+          <h1 className="mb-6 text-2xl font-bold text-center">
+            Next 13 Project
+          </h1>
           <form
             action=""
             className="flex flex-col items-center w-full space-y-8"
@@ -43,7 +46,7 @@ export default function Signin() {
               className="px-8 py-2 text-sm text-white bg-red-700 rounded-full w-max"
               type="submit"
             >
-              Masuk
+              Signin
             </button>
           </form>
         </div>
